@@ -1,0 +1,810 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0D3B246E86F3B80E064915F9 /* Pods_sociaBLE_sociaBLEUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D63FE65167A22EFDE91818F0 /* Pods_sociaBLE_sociaBLEUITests.framework */; };
+		59F1245D2E9CE629AFE187C7 /* Pods_sociaBLE.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E04CEF9E56F40BCD2889BA74 /* Pods_sociaBLE.framework */; };
+		80097F3AB728A02DB718EE39 /* Pods_sociaBLETests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7F0592CFAEF438496032981 /* Pods_sociaBLETests.framework */; };
+		A738AE6A26202A130037E912 /* PChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A738AE6926202A130037E912 /* PChatViewController.swift */; };
+		A74EE9AC2623F9DA00EBA0A9 /* BLECentralManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74EE9AB2623F9DA00EBA0A9 /* BLECentralManager.swift */; };
+		A74EE9B42623FC2F00EBA0A9 /* BLEPeripheralManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74EE9B32623FC2F00EBA0A9 /* BLEPeripheralManager.swift */; };
+		A74EE9BC26243FD900EBA0A9 /* Packet.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74EE9BB26243FD900EBA0A9 /* Packet.swift */; };
+		A7A90543262588B000952A9E /* TFTPPacket.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A90542262588B000952A9E /* TFTPPacket.swift */; };
+		A7A9054B26267AA300952A9E /* TFTPManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A9054A26267AA300952A9E /* TFTPManager.swift */; };
+		A7A905652627BB6100952A9E /* ChatImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A905642627BB6100952A9E /* ChatImageViewController.swift */; };
+		A7A9056A2627BB7300952A9E /* PChatImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A905692627BB7300952A9E /* PChatImageViewController.swift */; };
+		A7BD2A0F261EC92200392220 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BD2A0E261EC92200392220 /* AppDelegate.swift */; };
+		A7BD2A11261EC92200392220 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BD2A10261EC92200392220 /* SceneDelegate.swift */; };
+		A7BD2A16261EC92200392220 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7BD2A14261EC92200392220 /* Main.storyboard */; };
+		A7BD2A18261EC92300392220 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7BD2A17261EC92300392220 /* Assets.xcassets */; };
+		A7BD2A1B261EC92300392220 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7BD2A19261EC92300392220 /* LaunchScreen.storyboard */; };
+		A7BD2A26261EC92300392220 /* sociaBLETests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BD2A25261EC92300392220 /* sociaBLETests.swift */; };
+		A7BD2A31261EC92300392220 /* sociaBLEUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BD2A30261EC92300392220 /* sociaBLEUITests.swift */; };
+		A7BD2A42261ECDC800392220 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BD2A41261ECDC800392220 /* HomeViewController.swift */; };
+		A7BD2A47261ECDD300392220 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BD2A46261ECDD300392220 /* ChatViewController.swift */; };
+		A7BD2AA9261FCF2A00392220 /* DeviceTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BD2AA8261FCF2A00392220 /* DeviceTableViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A7BD2A22261EC92300392220 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A7BD2A03261EC92200392220 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A7BD2A0A261EC92200392220;
+			remoteInfo = sociaBLE;
+		};
+		A7BD2A2D261EC92300392220 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A7BD2A03261EC92200392220 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A7BD2A0A261EC92200392220;
+			remoteInfo = sociaBLE;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1717CE68AFB60FD597BF87F5 /* Pods-sociaBLETests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sociaBLETests.debug.xcconfig"; path = "Target Support Files/Pods-sociaBLETests/Pods-sociaBLETests.debug.xcconfig"; sourceTree = "<group>"; };
+		52E79E943481A4A40BD92B7D /* Pods-sociaBLE-sociaBLEUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sociaBLE-sociaBLEUITests.release.xcconfig"; path = "Target Support Files/Pods-sociaBLE-sociaBLEUITests/Pods-sociaBLE-sociaBLEUITests.release.xcconfig"; sourceTree = "<group>"; };
+		55DB985F3ADBC6ABC97CAAD9 /* Pods-sociaBLE-sociaBLEUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sociaBLE-sociaBLEUITests.debug.xcconfig"; path = "Target Support Files/Pods-sociaBLE-sociaBLEUITests/Pods-sociaBLE-sociaBLEUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		731FAF71C9B05BF7EEEC9DBB /* Pods-sociaBLETests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sociaBLETests.release.xcconfig"; path = "Target Support Files/Pods-sociaBLETests/Pods-sociaBLETests.release.xcconfig"; sourceTree = "<group>"; };
+		A738AE6926202A130037E912 /* PChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PChatViewController.swift; sourceTree = "<group>"; };
+		A74EE9AB2623F9DA00EBA0A9 /* BLECentralManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLECentralManager.swift; sourceTree = "<group>"; };
+		A74EE9B32623FC2F00EBA0A9 /* BLEPeripheralManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLEPeripheralManager.swift; sourceTree = "<group>"; };
+		A74EE9BB26243FD900EBA0A9 /* Packet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Packet.swift; sourceTree = "<group>"; };
+		A7A90542262588B000952A9E /* TFTPPacket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TFTPPacket.swift; sourceTree = "<group>"; };
+		A7A9054A26267AA300952A9E /* TFTPManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TFTPManager.swift; sourceTree = "<group>"; };
+		A7A905642627BB6100952A9E /* ChatImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatImageViewController.swift; sourceTree = "<group>"; };
+		A7A905692627BB7300952A9E /* PChatImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PChatImageViewController.swift; sourceTree = "<group>"; };
+		A7BD2A0B261EC92200392220 /* sociaBLE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sociaBLE.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7BD2A0E261EC92200392220 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A7BD2A10261EC92200392220 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		A7BD2A15261EC92200392220 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A7BD2A17261EC92300392220 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A7BD2A1A261EC92300392220 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A7BD2A1C261EC92300392220 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A7BD2A21261EC92300392220 /* sociaBLETests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = sociaBLETests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7BD2A25261EC92300392220 /* sociaBLETests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sociaBLETests.swift; sourceTree = "<group>"; };
+		A7BD2A27261EC92300392220 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A7BD2A2C261EC92300392220 /* sociaBLEUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = sociaBLEUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7BD2A30261EC92300392220 /* sociaBLEUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sociaBLEUITests.swift; sourceTree = "<group>"; };
+		A7BD2A32261EC92300392220 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A7BD2A41261ECDC800392220 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		A7BD2A46261ECDD300392220 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		A7BD2AA8261FCF2A00392220 /* DeviceTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceTableViewController.swift; sourceTree = "<group>"; };
+		ACFE992C64502173F606282E /* Pods-sociaBLE.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sociaBLE.debug.xcconfig"; path = "Target Support Files/Pods-sociaBLE/Pods-sociaBLE.debug.xcconfig"; sourceTree = "<group>"; };
+		AEBE83E80812CE8FEF824605 /* Pods-sociaBLE.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sociaBLE.release.xcconfig"; path = "Target Support Files/Pods-sociaBLE/Pods-sociaBLE.release.xcconfig"; sourceTree = "<group>"; };
+		D63FE65167A22EFDE91818F0 /* Pods_sociaBLE_sociaBLEUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_sociaBLE_sociaBLEUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7F0592CFAEF438496032981 /* Pods_sociaBLETests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_sociaBLETests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E04CEF9E56F40BCD2889BA74 /* Pods_sociaBLE.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_sociaBLE.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A7BD2A08261EC92200392220 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59F1245D2E9CE629AFE187C7 /* Pods_sociaBLE.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7BD2A1E261EC92300392220 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80097F3AB728A02DB718EE39 /* Pods_sociaBLETests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7BD2A29261EC92300392220 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D3B246E86F3B80E064915F9 /* Pods_sociaBLE_sociaBLEUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		26F163081927B2365B008432 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E04CEF9E56F40BCD2889BA74 /* Pods_sociaBLE.framework */,
+				D63FE65167A22EFDE91818F0 /* Pods_sociaBLE_sociaBLEUITests.framework */,
+				D7F0592CFAEF438496032981 /* Pods_sociaBLETests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7E04812BC8CAB9BDCCDDF12C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				ACFE992C64502173F606282E /* Pods-sociaBLE.debug.xcconfig */,
+				AEBE83E80812CE8FEF824605 /* Pods-sociaBLE.release.xcconfig */,
+				55DB985F3ADBC6ABC97CAAD9 /* Pods-sociaBLE-sociaBLEUITests.debug.xcconfig */,
+				52E79E943481A4A40BD92B7D /* Pods-sociaBLE-sociaBLEUITests.release.xcconfig */,
+				1717CE68AFB60FD597BF87F5 /* Pods-sociaBLETests.debug.xcconfig */,
+				731FAF71C9B05BF7EEEC9DBB /* Pods-sociaBLETests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A7BD2A02261EC92200392220 = {
+			isa = PBXGroup;
+			children = (
+				A7BD2A0D261EC92200392220 /* sociaBLE */,
+				A7BD2A24261EC92300392220 /* sociaBLETests */,
+				A7BD2A2F261EC92300392220 /* sociaBLEUITests */,
+				A7BD2A0C261EC92200392220 /* Products */,
+				7E04812BC8CAB9BDCCDDF12C /* Pods */,
+				26F163081927B2365B008432 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A7BD2A0C261EC92200392220 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A7BD2A0B261EC92200392220 /* sociaBLE.app */,
+				A7BD2A21261EC92300392220 /* sociaBLETests.xctest */,
+				A7BD2A2C261EC92300392220 /* sociaBLEUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A7BD2A0D261EC92200392220 /* sociaBLE */ = {
+			isa = PBXGroup;
+			children = (
+				A7BD2A0E261EC92200392220 /* AppDelegate.swift */,
+				A7BD2A10261EC92200392220 /* SceneDelegate.swift */,
+				A74EE9AB2623F9DA00EBA0A9 /* BLECentralManager.swift */,
+				A74EE9B32623FC2F00EBA0A9 /* BLEPeripheralManager.swift */,
+				A7A90542262588B000952A9E /* TFTPPacket.swift */,
+				A7A9054A26267AA300952A9E /* TFTPManager.swift */,
+				A74EE9BB26243FD900EBA0A9 /* Packet.swift */,
+				A7BD2A14261EC92200392220 /* Main.storyboard */,
+				A7A905642627BB6100952A9E /* ChatImageViewController.swift */,
+				A7A905692627BB7300952A9E /* PChatImageViewController.swift */,
+				A7BD2AA8261FCF2A00392220 /* DeviceTableViewController.swift */,
+				A7BD2A41261ECDC800392220 /* HomeViewController.swift */,
+				A7BD2A46261ECDD300392220 /* ChatViewController.swift */,
+				A738AE6926202A130037E912 /* PChatViewController.swift */,
+				A7BD2A17261EC92300392220 /* Assets.xcassets */,
+				A7BD2A19261EC92300392220 /* LaunchScreen.storyboard */,
+				A7BD2A1C261EC92300392220 /* Info.plist */,
+			);
+			path = sociaBLE;
+			sourceTree = "<group>";
+		};
+		A7BD2A24261EC92300392220 /* sociaBLETests */ = {
+			isa = PBXGroup;
+			children = (
+				A7BD2A25261EC92300392220 /* sociaBLETests.swift */,
+				A7BD2A27261EC92300392220 /* Info.plist */,
+			);
+			path = sociaBLETests;
+			sourceTree = "<group>";
+		};
+		A7BD2A2F261EC92300392220 /* sociaBLEUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A7BD2A30261EC92300392220 /* sociaBLEUITests.swift */,
+				A7BD2A32261EC92300392220 /* Info.plist */,
+			);
+			path = sociaBLEUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A7BD2A0A261EC92200392220 /* sociaBLE */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A7BD2A35261EC92300392220 /* Build configuration list for PBXNativeTarget "sociaBLE" */;
+			buildPhases = (
+				6CD7E749E0625C866D427AD3 /* [CP] Check Pods Manifest.lock */,
+				A7BD2A07261EC92200392220 /* Sources */,
+				A7BD2A08261EC92200392220 /* Frameworks */,
+				A7BD2A09261EC92200392220 /* Resources */,
+				CCA10AACEB0AB6077E05BA37 /* [CP] Embed Pods Frameworks */,
+				A7A9057926280C3D00952A9E /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = sociaBLE;
+			productName = sociaBLE;
+			productReference = A7BD2A0B261EC92200392220 /* sociaBLE.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A7BD2A20261EC92300392220 /* sociaBLETests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A7BD2A38261EC92300392220 /* Build configuration list for PBXNativeTarget "sociaBLETests" */;
+			buildPhases = (
+				01788852958A19B738741EC4 /* [CP] Check Pods Manifest.lock */,
+				A7BD2A1D261EC92300392220 /* Sources */,
+				A7BD2A1E261EC92300392220 /* Frameworks */,
+				A7BD2A1F261EC92300392220 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A7BD2A23261EC92300392220 /* PBXTargetDependency */,
+			);
+			name = sociaBLETests;
+			productName = sociaBLETests;
+			productReference = A7BD2A21261EC92300392220 /* sociaBLETests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A7BD2A2B261EC92300392220 /* sociaBLEUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A7BD2A3B261EC92300392220 /* Build configuration list for PBXNativeTarget "sociaBLEUITests" */;
+			buildPhases = (
+				BD98FEB6845A5C1D3EAD3AB3 /* [CP] Check Pods Manifest.lock */,
+				A7BD2A28261EC92300392220 /* Sources */,
+				A7BD2A29261EC92300392220 /* Frameworks */,
+				A7BD2A2A261EC92300392220 /* Resources */,
+				F5C58D4AEB54B900AA96E17F /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A7BD2A2E261EC92300392220 /* PBXTargetDependency */,
+			);
+			name = sociaBLEUITests;
+			productName = sociaBLEUITests;
+			productReference = A7BD2A2C261EC92300392220 /* sociaBLEUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A7BD2A03261EC92200392220 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					A7BD2A0A261EC92200392220 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					A7BD2A20261EC92300392220 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = A7BD2A0A261EC92200392220;
+					};
+					A7BD2A2B261EC92300392220 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = A7BD2A0A261EC92200392220;
+					};
+				};
+			};
+			buildConfigurationList = A7BD2A06261EC92200392220 /* Build configuration list for PBXProject "sociaBLE" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A7BD2A02261EC92200392220;
+			productRefGroup = A7BD2A0C261EC92200392220 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A7BD2A0A261EC92200392220 /* sociaBLE */,
+				A7BD2A20261EC92300392220 /* sociaBLETests */,
+				A7BD2A2B261EC92300392220 /* sociaBLEUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A7BD2A09261EC92200392220 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7BD2A1B261EC92300392220 /* LaunchScreen.storyboard in Resources */,
+				A7BD2A18261EC92300392220 /* Assets.xcassets in Resources */,
+				A7BD2A16261EC92200392220 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7BD2A1F261EC92300392220 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7BD2A2A261EC92300392220 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		01788852958A19B738741EC4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-sociaBLETests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6CD7E749E0625C866D427AD3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-sociaBLE-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A7A9057926280C3D00952A9E /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if test -d \"/opt/homebrew/bin/\"; then\n  PATH=\"/opt/homebrew/bin/:${PATH}\"\nfi\n\nexport PATH\n\nif which swiftlint >/dev/null; then\n    swiftlint\nelse\n    echo \"warning: SwiftLint not installed\"\nfi\n";
+		};
+		BD98FEB6845A5C1D3EAD3AB3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-sociaBLE-sociaBLEUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CCA10AACEB0AB6077E05BA37 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-sociaBLE/Pods-sociaBLE-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-sociaBLE/Pods-sociaBLE-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-sociaBLE/Pods-sociaBLE-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F5C58D4AEB54B900AA96E17F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-sociaBLE-sociaBLEUITests/Pods-sociaBLE-sociaBLEUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-sociaBLE-sociaBLEUITests/Pods-sociaBLE-sociaBLEUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-sociaBLE-sociaBLEUITests/Pods-sociaBLE-sociaBLEUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A7BD2A07261EC92200392220 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A74EE9AC2623F9DA00EBA0A9 /* BLECentralManager.swift in Sources */,
+				A7A90543262588B000952A9E /* TFTPPacket.swift in Sources */,
+				A738AE6A26202A130037E912 /* PChatViewController.swift in Sources */,
+				A7BD2AA9261FCF2A00392220 /* DeviceTableViewController.swift in Sources */,
+				A7BD2A0F261EC92200392220 /* AppDelegate.swift in Sources */,
+				A7BD2A11261EC92200392220 /* SceneDelegate.swift in Sources */,
+				A7A905652627BB6100952A9E /* ChatImageViewController.swift in Sources */,
+				A74EE9B42623FC2F00EBA0A9 /* BLEPeripheralManager.swift in Sources */,
+				A7A9054B26267AA300952A9E /* TFTPManager.swift in Sources */,
+				A7A9056A2627BB7300952A9E /* PChatImageViewController.swift in Sources */,
+				A74EE9BC26243FD900EBA0A9 /* Packet.swift in Sources */,
+				A7BD2A47261ECDD300392220 /* ChatViewController.swift in Sources */,
+				A7BD2A42261ECDC800392220 /* HomeViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7BD2A1D261EC92300392220 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7BD2A26261EC92300392220 /* sociaBLETests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7BD2A28261EC92300392220 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7BD2A31261EC92300392220 /* sociaBLEUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A7BD2A23261EC92300392220 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A7BD2A0A261EC92200392220 /* sociaBLE */;
+			targetProxy = A7BD2A22261EC92300392220 /* PBXContainerItemProxy */;
+		};
+		A7BD2A2E261EC92300392220 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A7BD2A0A261EC92200392220 /* sociaBLE */;
+			targetProxy = A7BD2A2D261EC92300392220 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A7BD2A14261EC92200392220 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A7BD2A15261EC92200392220 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A7BD2A19261EC92300392220 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A7BD2A1A261EC92300392220 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A7BD2A33261EC92300392220 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A7BD2A34261EC92300392220 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A7BD2A36261EC92300392220 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ACFE992C64502173F606282E /* Pods-sociaBLE.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BQ7X69DNU7;
+				INFOPLIST_FILE = sociaBLE/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = GEA.sociaBLE;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A7BD2A37261EC92300392220 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AEBE83E80812CE8FEF824605 /* Pods-sociaBLE.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BQ7X69DNU7;
+				INFOPLIST_FILE = sociaBLE/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = GEA.sociaBLE;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A7BD2A39261EC92300392220 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1717CE68AFB60FD597BF87F5 /* Pods-sociaBLETests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2VKXV4443D;
+				INFOPLIST_FILE = sociaBLETests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jameschoi.sociaBLETests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/sociaBLE.app/sociaBLE";
+			};
+			name = Debug;
+		};
+		A7BD2A3A261EC92300392220 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 731FAF71C9B05BF7EEEC9DBB /* Pods-sociaBLETests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2VKXV4443D;
+				INFOPLIST_FILE = sociaBLETests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jameschoi.sociaBLETests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/sociaBLE.app/sociaBLE";
+			};
+			name = Release;
+		};
+		A7BD2A3C261EC92300392220 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 55DB985F3ADBC6ABC97CAAD9 /* Pods-sociaBLE-sociaBLEUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2VKXV4443D;
+				INFOPLIST_FILE = sociaBLEUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jameschoi.sociaBLEUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = sociaBLE;
+			};
+			name = Debug;
+		};
+		A7BD2A3D261EC92300392220 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 52E79E943481A4A40BD92B7D /* Pods-sociaBLE-sociaBLEUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2VKXV4443D;
+				INFOPLIST_FILE = sociaBLEUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jameschoi.sociaBLEUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = sociaBLE;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A7BD2A06261EC92200392220 /* Build configuration list for PBXProject "sociaBLE" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7BD2A33261EC92300392220 /* Debug */,
+				A7BD2A34261EC92300392220 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A7BD2A35261EC92300392220 /* Build configuration list for PBXNativeTarget "sociaBLE" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7BD2A36261EC92300392220 /* Debug */,
+				A7BD2A37261EC92300392220 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A7BD2A38261EC92300392220 /* Build configuration list for PBXNativeTarget "sociaBLETests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7BD2A39261EC92300392220 /* Debug */,
+				A7BD2A3A261EC92300392220 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A7BD2A3B261EC92300392220 /* Build configuration list for PBXNativeTarget "sociaBLEUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7BD2A3C261EC92300392220 /* Debug */,
+				A7BD2A3D261EC92300392220 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A7BD2A03261EC92200392220 /* Project object */;
+}

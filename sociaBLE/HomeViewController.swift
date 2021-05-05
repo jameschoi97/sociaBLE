@@ -80,7 +80,7 @@ class HomeViewController: UIViewController, UITextFieldDelegate {
     // MARK: Actions
 
     @IBAction func scanButton(_ sender: UIButton) {
-        print("scan")
+        bleManager.peripherals = []
         bleManager.updateDevices = {(_ peripherals: [(String?, CBPeripheral)]) -> Void in
             for peripheral in peripherals {
                 self.tableController?.devices = []

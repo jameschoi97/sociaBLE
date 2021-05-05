@@ -46,9 +46,18 @@ class BLECentralManager: NSObject, CBCentralManagerDelegate, CBPeripheralDelegat
                         didDiscover peripheral: CBPeripheral,
                         advertisementData: [String: Any],
                         rssi RSSI: NSNumber) {
-        let pid = advertisementData["kCBAdvDataLocalName"] as? String
-        peripherals.append((pid, peripheral))
-        updateDevices?(peripherals)
+        var contained = false
+        for registeredPeripheral in peripherals {
+            if peripheral == registeredPeripheral.1 {
+                contained = true
+                break
+            }
+        }
+        if !contained {
+            let pid = advertisementData["kCBAdvDataLocalName"] as? String
+            peripherals.append((pid, peripheral))
+            updateDevices?(peripherals)
+        }
     }
 
     func centralManager(_ central: CBCentralManager, didConnect peripheral: CBPeripheral) {
